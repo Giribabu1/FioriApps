@@ -1,0 +1,31 @@
+<mvc:View controllerName="oft.formFirstSimpleForm.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<f:SimpleForm editable="true">
+						<f:content>
+							<Label required="true"  id="idName" text="Name"></Label>
+							<Input id="Name1" width="50%"  class="sapUiSmallMarginBottom" type="Text" placeholder="Enter Name ..." value="{data>/firstName}"></Input>
+						<Label required="true"  id="idAge" text="Age"></Label>
+						<Input id="Age" width="20%"></Input>
+						<Label text="Street/No."/>
+						<Input id="StreetNo" value="" width="30%"></Input>
+						<Label text="House/No."/>
+						<Input id="HouseNo" value="" width="30%"></Input>
+						<Label text="Zipcode"/>
+						<Input id="ZipCode" width="30%"></Input>
+					</f:content>
+				</f:SimpleForm>
+			</content>
+			<footer>
+				<Toolbar>
+					<ToolbarSpacer></ToolbarSpacer>
+					<Button text="Validate" press="onpress" type="Emphasized"></Button>
+				</Toolbar>
+			</footer>
+		</Page>
+	</pages>
+</App>
+</mvc:View>
